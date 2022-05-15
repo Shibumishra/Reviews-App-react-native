@@ -1,11 +1,10 @@
 import React from 'react'
-import ReviewDetails from '../Screen/ReviewDetails';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Home from '../Screen/Home';
+import About from '../Screen/About';
 
 const Stack = createNativeStackNavigator();
 
-const HomeStack = () => {
+const AboutStack = () => {
     return (
         <Stack.Navigator
             screenOptions={{
@@ -18,10 +17,9 @@ const HomeStack = () => {
                 },
             }}
         >
-            <Stack.Screen name="Home" component={Home} />
-            <Stack.Screen name="ReviewDetails" component={ReviewDetails} />
+            <Stack.Screen name="About" component={About} />
         </Stack.Navigator>
     )
 }
 
-export default HomeStack;
+export default AboutStack;

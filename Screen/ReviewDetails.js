@@ -13,6 +13,7 @@ const ReviewDetails = ({ route, navigation }) => {
       <Text >{title}</Text>
       <Text >{body}</Text>
       <Text >{rating}</Text>
+      <Button onPress={() => navigation.goBack()} title="Go back home" />
     </View>
   )
 }
